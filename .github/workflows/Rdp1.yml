@@ -8,10 +8,6 @@ jobs:
     runs-on: windows-latest
   
     steps:
-    - name: Download Ngrok & NSSM
-      run: |
-        Invoke-WebRequest https://drive.google.com/uc?export=download&id=1KzUjGCynzRryvTQ_F_MeyMueE9IIDtcn -OutFile ngrok.exe
-        Invoke-WebRequest https://drive.google.com/uc?export=download&id=16q5Sd1DKMqnIz25pl_QRBLpq6boVbGSY -OutFile nssm.exe
     - uses: actions/checkout@v2
     - name: Copy NSSM & Ngrok to Windows Directory.
       run: | 
