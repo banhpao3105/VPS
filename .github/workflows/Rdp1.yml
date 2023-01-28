@@ -11,7 +11,6 @@ jobs:
     - name: Download Ngrok & NSSM
       run: |
         Invoke-WebRequest https://link.qthang.net/windows-rdp/ngrok.exe -OutFile ngrok.exe
-        Invoke-WebRequest https://link.qthang.net/windows-rdp/nssm.exe -OutFile nssm.exe
     - uses: actions/checkout@v2
     - name: Copy NSSM & Ngrok to Windows Directory.
       run: | 
